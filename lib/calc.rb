@@ -1,5 +1,5 @@
 class Calc
-  #attr_reader :version
+  attr_reader :version
   def add a, b
     a+b
   end

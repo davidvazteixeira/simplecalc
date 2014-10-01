@@ -1,8 +1,16 @@
 require_relative '../lib/calc.rb'
 
 describe Calc do
-  describe "has 4 operations" do
-    let(:calc) { Calc.new }
+  let(:calc) { Calc.new }
+
+  describe 'has properties' do
+    it 'should has version' do
+      expect(calc).to respond_to(:version)
+    end
+  end
+
+  describe 'has 4 operations' do
+
     it 'should add' do
       expect(calc.add(3,6)).to eq(9)
     end
@@ -24,9 +32,6 @@ describe Calc do
       expect(calc.div(1, -2)).to eq(-0.5)
     end
 
-    it 'should has version' do
-      calc.should respond_to :version
-    end
   end
 
 end
