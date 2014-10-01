@@ -7,6 +7,11 @@ describe Calc do
     it 'should has version' do
       expect(calc).to respond_to(:version)
     end
+
+    it 'should has version number' do
+      expect(calc.version).not_to eq(nil)
+    end
+
   end
 
   describe 'has 4 operations' do

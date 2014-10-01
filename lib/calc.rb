@@ -1,5 +1,10 @@
 class Calc
   attr_reader :version
+
+  def initialize
+    @version = 0.1
+  end
+
   def add a, b
     a+b
   end
@@ -17,5 +22,3 @@ class Calc
   end
 
 end
-
-#Esse 'simplecalc' é um projeto com o seguinte propósito. Fazer modificações sem consultar nada.
