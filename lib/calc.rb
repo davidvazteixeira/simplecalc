@@ -1,4 +1,5 @@
 class Calc
+  #attr_reader :version
   def add a, b
     a+b
   end
@@ -14,5 +15,7 @@ class Calc
   def div a,b
     a.to_f / b
   end
+
 end
 
+#Esse 'simplecalc' é um projeto com o seguinte propósito. Fazer modificações sem consultar nada.

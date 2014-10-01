@@ -23,6 +23,10 @@ describe Calc do
       expect(calc.div(1, 2)).to eq(0.5)
       expect(calc.div(1, -2)).to eq(-0.5)
     end
+
+    it 'should has version' do
+      calc.should respond_to :version
+    end
   end
 
 end
